@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+.main{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  
+}
+.left{
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.right{
+  width: 60%;
+  height: 100%;
+  background-color: blue;
+}
+.right .rtop{
+  display: flex;
+  width: 100%;
+  height: 50%;
+  
+}
+.rtop .rtopl{
+  width: 55%;
+  height: 100%;
+  background-image: url("/images/Photo2.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  
+}
+.rtop .rtopr{
+  width: 45%;
+  height: 100%;
+  background-image :url("/images/Photo1.jpeg");
+  background-size: cover;
+  background-position: bottom;
+}
+.right .rbottom{
+  width:100%;
+  height: 50%;
+    background-image :url("/images/Photo3.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  
+}
+.left .nav{
+  display: flex;
+  width: 100%;
+  padding: 20px 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .rnav{
+  margin-left: 20px;
+}
+.left .centre{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.centre h1{
+  font-size: 33px;
+}
+
+.centre p{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  opacity: 0.6;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.centre a{
+  text-decoration: none;
+  color: black;
+  font-size :18px;
+  font-weight: 800;
+  border-bottom: 1px solid black;
+  
+}
+@media(max-width: 500px) {
+  .main{
+    flex-direction: column;
+  }
+  .main .left{
+    width: 100%;
+  }
+  .main .right{
+    width: 100%;
+  }
+}
